@@ -36,8 +36,8 @@ function GroupBlock({ group }: { group: Group }) {
 }
 
 export function Menu() {
-  const [active, setActive] = useState(menu[0].id);
-  const section = menu.find((s) => s.id === active) ?? menu[0];
+  const [active, setActive] = useState(menu[0]!.id);
+  const section = menu.find((s) => s.id === active) ?? menu[0]!;
 
   return (
     <section id="menu" className="border-y border-border bg-secondary py-24 md:py-32">
